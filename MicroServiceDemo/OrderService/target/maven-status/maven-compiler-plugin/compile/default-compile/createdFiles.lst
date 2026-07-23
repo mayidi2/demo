@@ -1,0 +1,15 @@
+org\xian1\orderservice\dto\OrderLineRequest.class
+org\xian1\orderservice\dto\ProductDTO.class
+org\xian1\orderservice\model\OrderItem.class
+org\xian1\orderservice\dto\AuthValidationResponse.class
+org\xian1\orderservice\client\ProductClient.class
+org\xian1\orderservice\controller\OrderController.class
+org\xian1\orderservice\dto\AuthValidationRequest.class
+org\xian1\orderservice\client\AuthClient.class
+org\xian1\orderservice\model\OrderRecord.class
+org\xian1\orderservice\dto\InvoiceResponse.class
+org\xian1\orderservice\repository\OrderRepository.class
+org\xian1\orderservice\service\OrderManagementService.class
+org\xian1\orderservice\OrderServiceApplication.class
+org\xian1\orderservice\dto\InvoiceItemResponse.class
+org\xian1\orderservice\dto\CreateOrderRequest.class

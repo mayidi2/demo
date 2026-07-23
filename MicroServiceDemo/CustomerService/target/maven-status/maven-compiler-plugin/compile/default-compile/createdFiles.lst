@@ -1,0 +1,5 @@
+org\xian1\customerservice\service\CustomerService.class
+org\xian1\customerservice\controller\CustomerController.class
+org\xian1\customerservice\model\Customer.class
+org\xian1\customerservice\CustomerServiceApplication.class
+org\xian1\customerservice\repository\CustomerRepository.class

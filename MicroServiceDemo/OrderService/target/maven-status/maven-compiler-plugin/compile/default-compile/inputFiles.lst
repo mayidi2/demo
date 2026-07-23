@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\model\OrderRecord.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\repository\OrderRepository.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\client\AuthClient.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\client\ProductClient.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\dto\CreateOrderRequest.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\OrderServiceApplication.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\dto\AuthValidationResponse.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\dto\InvoiceResponse.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\dto\AuthValidationRequest.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\dto\OrderLineRequest.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\model\OrderItem.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\dto\InvoiceItemResponse.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\service\OrderManagementService.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\controller\OrderController.java
+C:\Users\Administrator\Desktop\MicroServiceDemo\OrderService\src\main\java\org\xian1\orderservice\dto\ProductDTO.java

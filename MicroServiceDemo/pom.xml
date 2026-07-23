@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- ========== 1. 父项目基本信息 ========== -->
+    <groupId>org.xian1</groupId>
+    <artifactId>microservices-demo</artifactId>
+    <version>1.0.0</version>
+    <packaging>pom</packaging>   <!-- ⭐ 必须是 pom -->
+
+    <name>microservices-demo</name>
+    <description>微服务学习项目</description>
+
+    <!-- ========== 2. 继承 Spring Boot 父依赖 ========== -->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.0</version>
+    </parent>
+
+    <!-- ========== 3. 统一版本属性 ========== -->
+    <properties>
+        <java.version>17</java.version>
+        <spring-cloud.version>2023.0.0</spring-cloud.version>
+        <mysql.version>8.0.33</mysql.version>
+    </properties>
+
+    <!-- ========== 4. 版本管理（子模块继承） ========== -->
+    <dependencyManagement>
+        <dependencies>
+            <!-- Spring Cloud 统一版本 -->
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <!-- MySQL 驱动统一版本 -->
+            <dependency>
+                <groupId>com.mysql</groupId>
+                <artifactId>mysql-connector-j</artifactId>
+                <version>${mysql.version}</version>
+            </dependency>
+
+            <!-- 其他公共依赖可以在这里统一管理 -->
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.18.30</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <!-- ========== 5. 子模块列表 ========== -->
+    <modules>
+        <module>eurekaSever</module>
+        <module>CustomerService</module>
+        <module>BookServer</module>
+        <module>OrderService</module>
+        <module>ApiGateway</module>
+    </modules>
+
+    <!-- ========== 6. 公共依赖（所有子模块都会继承） ========== -->
+    <dependencies>
+        <!-- 测试依赖（所有子模块都有） -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <!-- ========== 7. 构建插件 ========== -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

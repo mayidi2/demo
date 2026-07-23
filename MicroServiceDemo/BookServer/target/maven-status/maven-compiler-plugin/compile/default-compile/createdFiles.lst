@@ -1,0 +1,4 @@
+org\xian1\bookserver\model\Book.class
+org\xian1\bookserver\Controller\ProductController.class
+org\xian1\bookserver\repository\ProductRepository.class
+org\xian1\bookserver\BookServerApplication.class
